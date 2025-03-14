@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 200px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+        .remember-me {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div>STUDENT PORTAL</div>
+    <div>
+        <a href="#">HOME</a>
+        <a href="#">UPDATE</a>
+        <a href="#">ADMIN</a>
+        <a href="#">ABOUT</a>
+        <a href="#">HELP</a>
+    </div>
+</div>
+
+<div class="logo">
+    <img src="logo.png" alt="VIRGOLA INSTITUTE OF TECHNOLOGY FOR WOMEN">
+</div>
+
+<div class="header">
+    <h1>VIIAVA INSTITUTE OF TECHNOLOGY FOR WOMEN</h1>
+    <p>ENIKEPADU, VIIAYAWADA</p>
+</div>
+
+<div class="login-container">
+    <h2>Faculty Login Page</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+
+        <button type="submit">Login</button>
+
+        <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

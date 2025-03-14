@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Marks Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 200px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .form-container input[type="text"], .form-container select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="logo">
+    <img src="logo.png" alt="VIRGOLA INSTITUTE OF TECHNOLOGY FOR WOMEN">
+</div>
+
+<div class="form-container">
+    <h2>Unit Marks</h2>
+    <form>
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" placeholder="Enter Student ID">
+
+        <label>SEMESTER:</label>
+        <div>
+            <input type="radio" id="3rdSem" name="semester" value="3rd Sem">
+            <label for="3rdSem">3rd Sem</label>
+        </div>
+        <div>
+            <input type="radio" id="4thSem" name="semester" value="4th Sem">
+            <label for="4thSem">4th Sem</label>
+        </div>
+
+        <button type="submit">GET</button>
+    </form>
+</div>
+
+</body>
+</html>
